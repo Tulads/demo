@@ -1,0 +1,23 @@
+server:
+  port: 18083
+#spring:
+#  application:
+#    name: emq-demo
+
+mqtt:
+  broker-url: tcp://192.168.1.100:1883
+  client-id: emqx_c
+  username: emqx_u
+  password: public
+
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wulian4?serverTimezone=UTC
+    username: root
+    password: "142857"
+
+  main:
+    allow-circular-references: true
